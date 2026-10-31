@@ -1,0 +1,59 @@
+{
+  "name": "opencode-goal-plugin",
+  "version": "2.2.0",
+  "description": "Persistent goal mode for OpenCode v2: /goal with LLM-extracted implementation and acceptance requirements, an auto-continue loop, a persistent independent reviewer (delivery-note gate, then detailed inspection), progress reports, restart recovery, and a TUI sidebar.",
+  "type": "module",
+  "license": "GPL-3.0-only",
+  "author": "ItheaValgulious",
+  "homepage": "https://github.com/itheamyvalgulious/opencode-goal-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itheamyvalgulious/opencode-goal-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itheamyvalgulious/opencode-goal-plugin/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "goal",
+    "goal-mode",
+    "autonomous-agents",
+    "code-review",
+    "verification",
+    "tui",
+    "sidebar",
+    "typescript"
+  ],
+  "exports": {
+    ".": "./index.ts",
+    "./tui": "./tui.ts",
+    "./rpc": "./rpc.ts"
+  },
+  "files": [
+    "index.ts",
+    "tui.ts",
+    "rpc.ts",
+    "prompts.ts",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.5.12",
+    "@opentui/solid": ">=0.5.12",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "2.0.18",
+    "@opentui/core": "0.5.12",
+    "@opentui/solid": "0.5.12",
+    "@types/node": "^24.0.0",
+    "solid-js": "1.9.12",
+    "typescript": "^5.9.0"
+  }
+}
